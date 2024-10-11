@@ -1,0 +1,54 @@
+.menu-section {
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  .menu-section h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+  }
+
+  .menu-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 30px;
+    transition: box-shadow 0.3s ease;
+    background-color: #fff;
+  }
+
+  .menu-card:hover {
+    box-shadow: 0px 4px 15px #0000001A;
+  }
+
+  .menu-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #999;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 50%;
+  }
+
+  .menu-card h5 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  .menu-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 25px;
+  }
+
+  .menu-card a {
+    color: #b44438;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .menu-card a:hover {
+    color: #a0302c;
+  }

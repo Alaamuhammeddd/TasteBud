@@ -1,0 +1,38 @@
+.top-bar {
+    background-color: #444;
+    color: #fff;
+    padding: 10px 0;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 10px 15px;
+  }
+
+  .btn-outline-dark {
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-weight: bold;
+  }
+
+  .nav-active {
+    background-color: #dbe0d0;
+    border-radius: 20px;
+    padding: 5px 15px;
+  }
+  /* .active {
+    background-color: #dbe0d0;
+    border-radius: 20px;
+    padding: 5px 15px;
+  } */
+  .nav-item:hover{
+    background-color: #dbe0d0;
+    border-radius: 20px;
+  }
+  .social-icons a {
+    color: white;
+    margin-left: 15px;
+  }
+
+
+
+  

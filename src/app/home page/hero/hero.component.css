@@ -1,0 +1,53 @@
+.hero-section {
+  background-image: url("../../../assets/images/Hero-Image.png");
+  background-size: cover;
+  background-position: center;
+  height: 1000px;
+}
+
+.content {
+  color: #333;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.btn-primary-custom {
+  background-color: #b44438;
+  border-color: #b44438;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+.btn-primary-custom:hover {
+  background-color: #a0302c;
+  border-color: #a0302c;
+}
+
+.btn-outline-custom {
+  color: #333;
+  border-color: #333;
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-size: 1rem;
+}
+
+.btn-outline-custom:hover {
+  background-color: #333;
+  color: #fff;
+}

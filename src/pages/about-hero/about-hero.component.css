@@ -1,0 +1,27 @@
+.custom-back{
+    background-color: #F9F9F7;
+}
+.contact-card {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .img-container {
+    position: relative;
+  }
+
+  .contact-card-container {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    max-width: 400px;
+  }
+
+  img {
+    border-radius: 10px;
+  }
+
+
+  
