@@ -1,10 +1,21 @@
-/* Wrapper for title and form */
-@import url(../../../styles.css);
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"); /* Wrapper for title and form */
+/* @import url(../../../styles.css); */
 .booking-form-wrapper {
   max-width: 800px; /* Increased for larger screens */
   margin: auto;
   padding: 20px;
   text-align: center; /* Center align only the wrapper content */
+}
+.error {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 5px;
+}
+
+input.ng-invalid.ng-touched,
+select.ng-invalid.ng-touched {
+  border-color: red;
 }
 
 /* Title Styling */

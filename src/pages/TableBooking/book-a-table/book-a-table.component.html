@@ -1,37 +1,94 @@
 <div class="booking-form-wrapper">
   <h1 class="booking-title">Book A Table</h1>
   <div class="booking-form-container">
-    <form>
+    <form [formGroup]="bookingForm" (ngSubmit)="onSubmit()">
       <div class="form-group">
         <label for="date">Date</label>
-        <input type="date" id="date" />
+        <input type="date" id="date" formControlName="date" />
+        <div
+          *ngIf="
+            bookingForm.get('date')?.invalid && bookingForm.get('date')?.touched
+          "
+          class="error"
+        >
+          Date is required.
+        </div>
       </div>
       <div class="form-group">
         <label for="time">Time</label>
-        <input type="time" id="time" />
+        <input type="time" id="time" formControlName="time" />
+        <div
+          *ngIf="
+            bookingForm.get('time')?.invalid && bookingForm.get('time')?.touched
+          "
+          class="error"
+        >
+          Time is required.
+        </div>
       </div>
       <div class="form-group">
         <label for="name">Name</label>
-        <input type="text" id="name" placeholder="Enter your name" />
+        <input
+          type="text"
+          id="name"
+          formControlName="name"
+          placeholder="Enter your name"
+        />
+        <div
+          *ngIf="
+            bookingForm.get('name')?.invalid && bookingForm.get('name')?.touched
+          "
+          class="error"
+        >
+          Name must be at least 2 characters.
+        </div>
       </div>
       <div class="form-group">
         <label for="contact">Contact Number</label>
         <input
           type="text"
           id="contact"
+          formControlName="contact"
           placeholder="Enter your contact number"
         />
+        <div
+          *ngIf="
+            bookingForm.get('contact')?.hasError('pattern') &&
+            bookingForm.get('contact')?.touched
+          "
+          class="error"
+        >
+          Contact number must contain only digits.
+        </div>
+        <div
+          *ngIf="
+            bookingForm.get('contact')?.hasError('required') &&
+            bookingForm.get('contact')?.touched
+          "
+          class="error"
+        >
+          Contact number is required.
+        </div>
       </div>
       <div class="form-group full-width">
         <label for="guests">Number of Guests</label>
-        <select id="guests">
+        <select id="guests" formControlName="guests">
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
           <option value="4">4</option>
         </select>
+        <div
+          *ngIf="
+            bookingForm.get('guests')?.invalid &&
+            bookingForm.get('guests')?.touched
+          "
+          class="error"
+        >
+          Please select the number of guests.
+        </div>
       </div>
-      <button type="submit">Book Now</button>
+      <button type="submit" [disabled]="bookingForm.invalid">Book Now</button>
     </form>
   </div>
 </div>
